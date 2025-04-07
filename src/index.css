@@ -1,0 +1,238 @@
+/* index.css */
+
+@font-face {
+    font-family: 'Ruberoid';
+    src: url('./fonts/Ruberoid-Regular.eot');
+    src: local('Ruberoid'), local('Ruberoid-Regular'),
+        url('./fonts/Ruberoid-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Ruberoid-Regular.woff2') format('woff2'),
+        url('./fonts/Ruberoid-Regular.woff') format('woff'),
+        url('./fonts/Ruberoid-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Основные стили */
+/* Основные стили */
+:root {
+  --dark-gray: #2a2a2a;
+  --medium-gray: #3a3a3a;
+  --light-gray: #4a4a4a;
+  /* --gold: #d4af37; */
+  --gold: white;
+  --light-gold: #f1e5ac;
+}
+
+body {
+  margin: 0;
+  font-family: 'Ruberoid';
+  background-color: var(--dark-gray);
+  color: white;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--medium-gray);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  z-index: 10;
+  border-bottom: 1px solid var(--gold);
+}
+
+.logo {
+  color: white;
+  font-size: 22px;
+  font-weight: 900;
+  padding-top: 5px;
+}
+
+.linkLogo {
+  text-decoration: none;
+}
+
+/* Main content */
+.main-content {
+  padding: 75px 10px;
+}
+
+.titleHomePage {
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+  padding-top: 5px;
+}
+
+/* Кнопки станций */
+.station-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.station-button {
+  padding: 20px 15px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: var(--medium-gray);
+  color: white;
+  border: 2px solid var(--gold);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.station-button:hover {
+  background-color: var(--gold);
+  color: var(--dark-gray);
+  transform: translateY(-2px);
+}
+
+/* Карточки блюд */
+.dish-card {
+  background-color: var(--medium-gray);
+  border-radius: 8px;
+  margin: 15px auto;
+  border-left: 4px solid var(--gold);
+  overflow: hidden;
+  max-width: 600px;
+}
+
+.dish-card.expanded, 
+.dish-card.collapsed {
+  background-color: var(--medium-gray);
+}
+
+.dish-header {
+  padding: 12px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dish-header h3 {
+  margin: 0;
+  color: var(--gold);
+  font-size: 18px;
+}
+
+.toggle-icon {
+  color: var(--gold);
+  font-size: 16px;
+}
+
+.dish-content {
+  padding: 0 10px 10px;
+  display: none;
+}
+
+.dish-card.expanded .dish-content {
+  display: block;
+}
+
+.dish-image {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 1px solid var(--light-gray);
+}
+
+/* Ингредиенты */
+.ingredients-container {
+  margin: 15px 0;
+}
+
+.ingredient-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px dashed var(--light-gray);
+}
+
+.ingredient-name {
+  color: white;
+}
+
+.ingredient-weight {
+  color: var(--light-gold);
+}
+
+.dish-link {
+  color: var(--light-gold);
+  text-decoration: none;
+}
+
+.dish-link:hover {
+  text-decoration: underline;
+}
+
+.preparation {
+  background-color: rgba(0,0,0,0.2);
+  padding: 15px;
+  border-radius: 4px;
+  margin-top: 15px;
+  border-left: 2px solid var(--gold);
+}
+
+/* Навигационные кнопки */
+.navigation-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.nav-button {
+  padding: 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  min-width: 20px;
+  justify-content: center;
+}
+
+.back-button {
+  background-color: var(--light-gray);
+  color: white;
+  border: none;
+}
+
+.home-button {
+  background-color: var(--gold);
+  color: var(--dark-gray);
+  border: none;
+}
+
+/* Заголовок станции */
+.station-title {
+  color: var(--gold);
+  font-size: 24px;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--gold);
+}
