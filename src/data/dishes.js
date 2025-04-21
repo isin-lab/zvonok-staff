@@ -2025,8 +2025,18 @@ export const dishes = {
 			{ name: 'Хопперс Драй', weight: '5мл' },
 			{ name: 'Corralejo Blanco', weight: '5мл' },
 			{ name: 'Трипл Сек', weight: '5мл' },
-			{ name: 'П/Ф кордиал лайм', weight: '10мл' },
-			{ name: 'П/Ф сироп Кола', weight: '10мл' },
+			{
+				name: 'П/Ф кордиал лайм',
+				weight: '10мл',
+				isDish: true,
+				dishId: 'dish706',
+			},
+			{
+				name: 'П/Ф сироп Кола',
+				weight: '10мл',
+				isDish: true,
+				dishId: 'dish707',
+			},
 			{ name: 'Вода', weight: '10мл' },
 		],
 		preparation:
@@ -2057,7 +2067,10 @@ export const dishes = {
 		ingredients: [
 			{ name: 'Белая Берёзка', weight: '200мл' },
 			{ name: 'Кофе', weight: '200мл' },
-			{ name: 'П/Ф кофейный ликёр', weight: '100мл' },
+			{
+				name: 'П/Ф кофейный ликёр',
+				weight: '100мл',
+			},
 			{ name: 'Ванильный экстракт', weight: '5 капель' },
 			{ name: 'Альбумин', weight: '1г' },
 		],
@@ -2107,7 +2120,12 @@ export const dishes = {
 		ingredients: [
 			{ name: 'Белая берёзка клюква', weight: '15мл' },
 			{ name: 'П/Ф Лимончелло', weight: '15мл' },
-			{ name: 'П/Ф Кордиал лайм', weight: '30мл' },
+			{
+				name: 'П/Ф Кордиал лайм',
+				weight: '30мл',
+				isDish: true,
+				dishId: 'dish706',
+			},
 			{ name: 'Мартини Фиеро', weight: '15мл' },
 			{ name: 'Кампари', weight: '10мл' },
 			{ name: 'П/Ф Морс клюквенный', weight: '50мл' },
