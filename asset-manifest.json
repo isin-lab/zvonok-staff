@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/zvonok-staff/static/css/main.6d1fc002.css",
-    "main.js": "/zvonok-staff/static/js/main.c8428f40.js",
+    "main.js": "/zvonok-staff/static/js/main.5d6bbb4b.js",
     "static/media/sShprotoj.jpg": "/zvonok-staff/static/media/sShprotoj.97385b4f6d28d2f80347.jpg",
     "static/media/julien.jpg": "/zvonok-staff/static/media/julien.36f1f2c32e85ce5d3898.jpg",
     "static/media/kupata.jpg": "/zvonok-staff/static/media/kupata.89785d2c3bc788e92730.jpg",
@@ -27,10 +27,10 @@
     "static/media/Ruberoid-Regular.woff2": "/zvonok-staff/static/media/Ruberoid-Regular.aeaf80fb27a71009fe78.woff2",
     "index.html": "/zvonok-staff/index.html",
     "main.6d1fc002.css.map": "/zvonok-staff/static/css/main.6d1fc002.css.map",
-    "main.c8428f40.js.map": "/zvonok-staff/static/js/main.c8428f40.js.map"
+    "main.5d6bbb4b.js.map": "/zvonok-staff/static/js/main.5d6bbb4b.js.map"
   },
   "entrypoints": [
     "static/css/main.6d1fc002.css",
-    "static/js/main.c8428f40.js"
+    "static/js/main.5d6bbb4b.js"
   ]
 }
