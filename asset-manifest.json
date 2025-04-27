@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/zvonok-staff/static/css/main.6d1fc002.css",
-    "main.js": "/zvonok-staff/static/js/main.7456603f.js",
+    "main.css": "/zvonok-staff/static/css/main.291948c7.css",
+    "main.js": "/zvonok-staff/static/js/main.8fe054fb.js",
     "static/media/sShprotoj.jpg": "/zvonok-staff/static/media/sShprotoj.97385b4f6d28d2f80347.jpg",
     "static/media/julien.jpg": "/zvonok-staff/static/media/julien.36f1f2c32e85ce5d3898.jpg",
     "static/media/kupata.jpg": "/zvonok-staff/static/media/kupata.89785d2c3bc788e92730.jpg",
@@ -18,6 +18,7 @@
     "static/media/oladia.jpg": "/zvonok-staff/static/media/oladia.ab7b3e4f9d0a7b6be471.jpg",
     "static/media/riet.jpg": "/zvonok-staff/static/media/riet.08814a6420d8f2f6b7f0.jpg",
     "static/media/stolichnij.jpg": "/zvonok-staff/static/media/stolichnij.95db34dd2b09183c3d12.jpg",
+    "static/media/zvonokLogo.svg": "/zvonok-staff/static/media/zvonokLogo.acb84b8dede7fac80d5bc39a0ada52d7.svg",
     "static/media/sOkorokom.jpg": "/zvonok-staff/static/media/sOkorokom.f18a07071c784318efb3.jpg",
     "static/media/tefteli.jpg": "/zvonok-staff/static/media/tefteli.16c5722aa6a2dc7517f7.jpg",
     "static/media/krabov.jpg": "/zvonok-staff/static/media/krabov.b313b6bd98b4be14536b.jpg",
@@ -25,12 +26,13 @@
     "static/media/perecFarsh.jpg": "/zvonok-staff/static/media/perecFarsh.f3b9f2de46849ccc965d.jpg",
     "static/media/Ruberoid-Regular.woff": "/zvonok-staff/static/media/Ruberoid-Regular.d28c5a9a2fe714064a39.woff",
     "static/media/Ruberoid-Regular.woff2": "/zvonok-staff/static/media/Ruberoid-Regular.aeaf80fb27a71009fe78.woff2",
+    "static/media/rs.svg": "/zvonok-staff/static/media/rs.ebed24fd7273e2b586d954f2afa93693.svg",
     "index.html": "/zvonok-staff/index.html",
-    "main.6d1fc002.css.map": "/zvonok-staff/static/css/main.6d1fc002.css.map",
-    "main.7456603f.js.map": "/zvonok-staff/static/js/main.7456603f.js.map"
+    "main.291948c7.css.map": "/zvonok-staff/static/css/main.291948c7.css.map",
+    "main.8fe054fb.js.map": "/zvonok-staff/static/js/main.8fe054fb.js.map"
   },
   "entrypoints": [
-    "static/css/main.6d1fc002.css",
-    "static/js/main.7456603f.js"
+    "static/css/main.291948c7.css",
+    "static/js/main.8fe054fb.js"
   ]
 }
