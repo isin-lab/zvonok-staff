@@ -12,227 +12,391 @@
     font-style: normal;
 }
 
+:root {
+  --dark-bg: #121212;
+  --card-bg: #1E1E1E;
+  --accent: #973114;
+  --accent-hover: #BF3A1A;
+  --text: #FFFFFF;
+  --text-secondary: #BBBBBB;
+  --light-gray: #333333;
+  --border-radius: 12px;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  --transition: all 0.3s ease;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Основные стили */
-/* Основные стили */
-:root {
-  --dark-gray: #2a2a2a;
-  --medium-gray: #3a3a3a;
-  --light-gray: #4a4a4a;
-  /* --gold: #d4af37; */
-  --gold: white;
-  --light-gold: #f1e5ac;
-}
-
 body {
-  margin: 0;
-  font-family: 'Ruberoid';
-  background-color: var(--dark-gray);
-  color: white;
+  font-family: 'Ruberoid', sans-serif;
+  background-color: var(--dark-bg);
+  color: var(--text);
+  line-height: 1.6;
 }
 
-/* Header */
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: var(--medium-gray);
-  padding: 10px;
+/* Лейаут */
+.app-container {
+  min-height: 100vh;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+}
+
+/* Хедер */
+.header {
+  height: 80px;
+  background-color: var(--dark-bg);
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
   align-items: center;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-  z-index: 10;
-  border-bottom: 1px solid var(--gold);
+  justify-content: center;
 }
 
-.logo {
-  color: white;
-  font-size: 22px;
-  font-weight: 900;
-  padding-top: 5px;
-}
-
-.linkLogo {
-  text-decoration: none;
-}
-
-/* Main content */
-.main-content {
-  padding: 75px 10px;
-}
-
-.titleHomePage {
-  color: white;
-  font-size: 20px;
-  font-weight: 900;
-  padding-top: 5px;
-}
-
-/* Кнопки станций */
-.station-buttons {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 15px;
-  margin-top: 20px;
-}
-
-.station-button {
-  padding: 20px 15px 15px;
-  font-size: 14px;
-  font-weight: bold;
-  text-transform: uppercase;
-  background-color: var(--medium-gray);
-  color: white;
-  border: 2px solid var(--gold);
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s;
-  text-align: center;
-  text-decoration: none;
+.header-content {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.logo-image {
+  height: 60px;
+  width: auto;
+}
+
+/* Основной контент */
+.main-content {
+  flex: 1;
+  padding: 2rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Общие стили для страниц */
+.category-page,
+.station-page,
+.dish-page,
+.home-page {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  gap: 20px;
+}
+
+.category-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.category-title {
+  color: var(--text);
+  font-size: 2rem;
+  margin: 0;
+  text-align: center;
+}
+
+.category-icon-container {
+  font-size: 3rem;
+  color: var(--text);
+  margin: 0;
+}
+
+/* Поиск */
+.search-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.search-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background-color: var(--card-bg);
+  border: 2px solid var(--accent);
+  border-radius: var(--border-radius);
+  color: var(--text);
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--accent-hover);
+  box-shadow: 0 0 0 3px rgba(151, 49, 20, 0.3);
+}
+
+/* Кнопки */
+.category-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.category-button {
+  background-color: var(--accent);
+  color: var(--text);
+  border: 2px solid var(--accent);
+  border-radius: var(--border-radius);
+  padding: 2.5rem 1rem;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+  text-decoration: none;
+}
+
+.category-button:hover {
+  background-color: var(--accent-hover);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+}
+
+.category-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.station-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.station-button {
+  background-color: var(--accent);
+  color: var(--text);
+  border: 2px solid var(--accent);
+  border-radius: var(--border-radius);
+  padding: 1.5rem 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition);
+  text-decoration: none;
+  display: block;
 }
 
 .station-button:hover {
-  background-color: var(--gold);
-  color: var(--dark-gray);
-  transform: translateY(-2px);
+  background-color: var(--accent-hover);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
 }
 
-/* Карточки блюд */
+/* Обновленные стили для карточек блюд */
 .dish-card {
-  background-color: var(--medium-gray);
-  border-radius: 8px;
-  margin: 15px auto;
-  border-left: 4px solid var(--gold);
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  margin-bottom: 1rem;
   overflow: hidden;
+  box-shadow: var(--shadow);
+  border-left: 4px solid var(--accent);
+  width: 100%;
   max-width: 600px;
-}
-
-.dish-card.expanded, 
-.dish-card.collapsed {
-  background-color: var(--medium-gray);
+  margin: 12px auto;
 }
 
 .dish-header {
-  padding: 12px 15px;
+  padding: 0.8rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
 }
 
-.dish-header h3 {
-  margin: 0;
-  color: var(--gold);
-  font-size: 18px;
-}
-
-.toggle-icon {
-  color: var(--gold);
-  font-size: 16px;
-}
-
 .dish-content {
-  padding: 0 10px 10px;
-  display: none;
+  padding: 0 0.8rem 0.8rem;
 }
 
-.dish-card.expanded .dish-content {
-  display: block;
-}
-
-.dish-image {
-  width: 100%;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 15px;
-  border: 1px solid var(--light-gray);
-}
-
-/* Ингредиенты */
+/* Стили для списка ингредиентов */
 .ingredients-container {
-  margin: 15px 0;
+  margin: 0.5rem 0;
 }
 
 .ingredient-row {
   display: flex;
   justify-content: space-between;
-  padding: 8px 0;
-  border-bottom: 1px dashed var(--light-gray);
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.ingredient-row:last-child {
+  border-bottom: none;
 }
 
 .ingredient-name {
-  color: white;
+  color: var(--text);
+  flex: 1;
 }
 
 .ingredient-weight {
-  color: var(--light-gold);
+  color: var(--text);
+  margin-left: 1rem;
+  min-width: 60px;
+  text-align: right;
 }
 
+/* Стили для ссылок-ингредиентов */
 .dish-link {
-  color: var(--light-gold);
-  text-decoration: none;
+  color: var(--text);
+  text-decoration: underline !important;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--text);
+  transition: var(--transition);
 }
 
 .dish-link:hover {
-  text-decoration: underline;
+  text-decoration-color: var(--accent);
 }
 
-.preparation {
-  background-color: rgba(0,0,0,0.2);
-  padding: 15px;
+/* Стили для изображения блюда */
+.dish-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
   border-radius: 4px;
-  margin-top: 15px;
-  border-left: 2px solid var(--gold);
+  margin: 0.5rem 0;
+  border: 1px solid var(--light-gray);
 }
 
-/* Навигационные кнопки */
+/* Стили для блока приготовления */
+/* Обновленные стили для блока приготовления */
+.preparation {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--accent);
+}
+
+.preparation h4 {
+  color: var(--text);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.preparation p {
+  color: var(--text);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Навигация */
 .navigation-buttons {
   display: flex;
   justify-content: flex-end;
-  gap: 15px;
-  margin-top: 30px;
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
 .nav-button {
-  padding: 16px;
-  border-radius: 6px;
-  font-size: 14px;
-  font-weight: 500;
-  display: inline-flex;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--accent);
+  color: var(--text);
+  border: none;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
   text-decoration: none;
-  min-width: 20px;
+}
+
+.nav-button:hover {
+  background-color: var(--accent-hover);
+}
+
+/* Стили для футера */
+.footer {
+  background-color: var(--dark-bg);
+  padding: 1.5rem 0;
+  border-top: 2px solid var(--accent);
+}
+
+.social-links {
+  display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
-.back-button {
-  background-color: var(--light-gray);
-  color: white;
-  border: none;
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: var(--transition);
 }
 
-.home-button {
-  background-color: var(--gold);
-  color: var(--dark-gray);
-  border: none;
+.social-icon {
+  width: 40px;
+  height: 40px;
 }
 
-/* Заголовок станции */
+/* Стиль для Telegram */
+.telegram {
+  color: #0088cc;
+  font-size: 33px;
+}
+
+
+/* Стиль для VK */
+.vk {
+  color: #0077ff;
+  font-size: 40px;
+
+}
+
+/* Стиль для кастомной иконки */
+.custom-icon {
+  object-fit: contain;
+  width: 30px;
+  height: 30px;
+}
+
+/* Убираем подчеркивания у всех ссылок */
+a, .linkLogo {
+  text-decoration: none !important;
+}
+
+/* Дополнительные стили */
 .station-title {
-  color: var(--gold);
-  font-size: 24px;
-  margin-bottom: 25px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid var(--gold);
+  color: var(--text);
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.no-results {
+  color: var(--text-secondary);
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 2rem 0;
 }

@@ -3,11 +3,19 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FiChevronDown, FiChevronUp } from 'react-icons/fi'
 
-const DishCard = ({ dish, isExpanded: initialExpanded = false }) => {
+const DishCard = ({
+	dish,
+	isExpanded: initialExpanded = false,
+	isSearchResult = false,
+}) => {
 	const [isExpanded, setIsExpanded] = useState(initialExpanded)
 
 	return (
-		<div className={`dish-card ${isExpanded ? 'expanded' : 'collapsed'}`}>
+		<div
+			className={`dish-card ${isExpanded ? 'expanded' : 'collapsed'} ${
+				isSearchResult ? 'search-result' : ''
+			}`}
+		>
 			<div className='dish-header' onClick={() => setIsExpanded(!isExpanded)}>
 				<h3>{dish.name}</h3>
 				<span className='toggle-icon'>
@@ -22,6 +30,7 @@ const DishCard = ({ dish, isExpanded: initialExpanded = false }) => {
 							src={dish.image}
 							alt={dish.name}
 							className='dish-image'
+							style={{ maxWidth: '100%' }}
 						/>
 					)}
 
