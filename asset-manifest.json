@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/zvonok-staff/static/css/main.291948c7.css",
-    "main.js": "/zvonok-staff/static/js/main.8fe054fb.js",
+    "main.js": "/zvonok-staff/static/js/main.a786b76f.js",
     "static/media/sShprotoj.jpg": "/zvonok-staff/static/media/sShprotoj.97385b4f6d28d2f80347.jpg",
     "static/media/julien.jpg": "/zvonok-staff/static/media/julien.36f1f2c32e85ce5d3898.jpg",
     "static/media/kupata.jpg": "/zvonok-staff/static/media/kupata.89785d2c3bc788e92730.jpg",
@@ -29,10 +29,10 @@
     "static/media/rs.svg": "/zvonok-staff/static/media/rs.ebed24fd7273e2b586d954f2afa93693.svg",
     "index.html": "/zvonok-staff/index.html",
     "main.291948c7.css.map": "/zvonok-staff/static/css/main.291948c7.css.map",
-    "main.8fe054fb.js.map": "/zvonok-staff/static/js/main.8fe054fb.js.map"
+    "main.a786b76f.js.map": "/zvonok-staff/static/js/main.a786b76f.js.map"
   },
   "entrypoints": [
     "static/css/main.291948c7.css",
-    "static/js/main.8fe054fb.js"
+    "static/js/main.a786b76f.js"
   ]
 }
