@@ -39,11 +39,147 @@ export const dishes = {
 		preparation: '',
 		station: 'station1',
 	},
+	// Помидоры зеленые
+	dish102: {
+		id: 'dish102',
+		name: 'Помидоры зеленые (нет тк)',
+		image: '',
+		ingredients: [
+			{
+				name: '',
+				weight: '',
+				isDish: false,
+				dishId: '',
+			},
+			{ name: '', weight: '' },
+		],
+		preparation: '',
+		station: 'station1',
+	},
+	// Перцы маринованные
+	dish103: {
+		id: 'dish103',
+		name: 'Перцы маринованные (нет тк)',
+		image: '',
+		ingredients: [
+			{
+				name: '',
+				weight: '',
+				isDish: false,
+				dishId: '',
+			},
+			{ name: '', weight: '' },
+		],
+		preparation: '',
+		station: 'station1',
+	},
+	// Соленые огурцы
+	dish104: {
+		id: 'dish104',
+		name: 'Соленые огурцы (нет тк)',
+		image: '',
+		ingredients: [
+			{
+				name: '',
+				weight: '',
+				isDish: false,
+				dishId: '',
+			},
+			{ name: '', weight: '' },
+		],
+		preparation: '',
+		station: 'station1',
+	},
+	// Малосольные огурцы
+	dish105: {
+		id: 'dish105',
+		name: 'Малосольные огурцы (нет тк)',
+		image: '',
+		ingredients: [
+			{
+				name: '',
+				weight: '',
+				isDish: false,
+				dishId: '',
+			},
+			{ name: '', weight: '' },
+		],
+		preparation: '',
+		station: 'station1',
+	},
+	// Грузди маринованные
+	dish106: {
+		id: 'dish106',
+		name: 'Грузди маринованные (нет тк)',
+		image: '',
+		ingredients: [
+			{
+				name: '',
+				weight: '',
+				isDish: false,
+				dishId: '',
+			},
+			{ name: '', weight: '' },
+		],
+		preparation: '',
+		station: 'station1',
+	},
+	// Квашеная капуста
+	dish107: {
+		id: 'dish107',
+		name: 'Квашеная капуста (нет тк)',
+		image: '',
+		ingredients: [
+			{
+				name: '',
+				weight: '',
+				isDish: false,
+				dishId: '',
+			},
+			{ name: '', weight: '' },
+		],
+		preparation: '',
+		station: 'station1',
+	},
+	// Черемша
+	dish108: {
+		id: 'dish108',
+		name: 'Черемша (нет тк)',
+		image: '',
+		ingredients: [
+			{
+				name: '',
+				weight: '',
+				isDish: false,
+				dishId: '',
+			},
+			{ name: '', weight: '' },
+		],
+		preparation: '',
+		station: 'station1',
+	},
+	// Оливки заморские
+	dish109: {
+		id: 'dish109',
+		name: 'Оливки заморские (нет тк)',
+		image: '',
+		ingredients: [
+			{
+				name: '',
+				weight: '',
+				isDish: false,
+				dishId: '',
+			},
+			{ name: '', weight: '' },
+		],
+		preparation: '',
+		station: 'station1',
+	},
 	// station2
 	// Бутер с грибным жульеном +
 	dish201: {
 		id: 'dish201',
-		name: 'С грибным жульеном',
+		name: 'Горячий с грибным жульеном',
 		image: julien,
 		ingredients: [
 			{
@@ -85,7 +221,7 @@ export const dishes = {
 	// Фрикадельки ++
 	dish203: {
 		id: 'dish203',
-		name: 'Фрикалельки',
+		name: 'Фрикадельки с малиновым вареньем',
 		image: tefteli,
 		ingredients: [
 			{
@@ -119,7 +255,7 @@ export const dishes = {
 	// Оладушки с икрой
 	dish204: {
 		id: 'dish204',
-		name: 'Оладушки с икрой',
+		name: 'Оладьи с красной икрой',
 		image: oladia,
 		ingredients: [
 			{
@@ -148,7 +284,7 @@ export const dishes = {
 	// Крабовый салат ++
 	dish205: {
 		id: 'dish205',
-		name: 'Крабовый салат',
+		name: 'Салат Крабовый',
 		image: krabov,
 		ingredients: [
 			{
@@ -170,7 +306,7 @@ export const dishes = {
 	// Столичный ++
 	dish206: {
 		id: 'dish206',
-		name: 'Столичный',
+		name: 'Салат Столичный',
 		image: stolichnij,
 		ingredients: [
 			{
@@ -192,7 +328,7 @@ export const dishes = {
 	// Щеки
 	dish207: {
 		id: 'dish207',
-		name: 'Щеки',
+		name: 'Щеки говяжьи с макаронами',
 		image: scheki,
 		ingredients: [
 			{
@@ -223,12 +359,114 @@ export const dishes = {
 		preparation: '',
 		station: 'station2',
 	},
+	// Драники с красной рыбой
+	dish208: {
+		id: 'dish208',
+		name: 'Драники с красной рыбой (нет тк)',
+		image: '',
+		ingredients: [
+			{
+				name: '',
+				weight: '',
+				isDish: false,
+				dishId: '',
+			},
+			{ name: '', weight: '' },
+		],
+		preparation: '',
+		station: 'station2',
+	},
+	// Драники с окороком
+	dish209: {
+		id: 'dish209',
+		name: 'Драники с окороком (нет тк)',
+		image: '',
+		ingredients: [
+			{
+				name: '',
+				weight: '',
+				isDish: false,
+				dishId: '',
+			},
+			{ name: '', weight: '' },
+		],
+		preparation: '',
+		station: 'station2',
+	},
+	// Пельмени домашние
+	dish210: {
+		id: 'dish210',
+		name: 'Пельмени домашние (нет тк)',
+		image: '',
+		ingredients: [
+			{
+				name: '',
+				weight: '',
+				isDish: false,
+				dishId: '',
+			},
+			{ name: '', weight: '' },
+		],
+		preparation: '',
+		station: 'station2',
+	},
+	// Вареники с картошкой и лесными грибами
+	dish211: {
+		id: 'dish211',
+		name: 'Вареники с картошкой и лесными грибами (нет тк)',
+		image: '',
+		ingredients: [
+			{
+				name: '',
+				weight: '',
+				isDish: false,
+				dishId: '',
+			},
+			{ name: '', weight: '' },
+		],
+		preparation: '',
+		station: 'station2',
+	},
+	// Купаты с пюре
+	dish212: {
+		id: 'dish212',
+		name: 'Купаты с пюре (нет тк)',
+		image: '',
+		ingredients: [
+			{
+				name: '',
+				weight: '',
+				isDish: false,
+				dishId: '',
+			},
+			{ name: '', weight: '' },
+		],
+		preparation: '',
+		station: 'station2',
+	},
+	// Похмельный бульон с гренками
+	dish213: {
+		id: 'dish213',
+		name: 'Похмельный бульон с гренками (нет тк)',
+		image: '',
+		ingredients: [
+			{
+				name: '',
+				weight: '',
+				isDish: false,
+				dishId: '',
+			},
+			{ name: '', weight: '' },
+		],
+		preparation: '',
+		station: 'station2',
+	},
 
 	// station3
 	// Бутер с окороком, огурцом, фисташкой +
 	dish301: {
 		id: 'dish301',
-		name: 'С окороком, фисташкой',
+		name: 'С окороком и фисташкой',
 		image: sOkorokom,
 		ingredients: [
 			{ name: 'окорок', weight: '40г' },
@@ -248,7 +486,7 @@ export const dishes = {
 	// Бутер с ростбифом +
 	dish302: {
 		id: 'dish302',
-		name: 'С ростбифом',
+		name: 'С ростбифом и маринованным огурцом',
 		image: sRosbifom,
 		ingredients: [
 			{ name: 'Ростбиф пф', weight: '30г', isDish: true, dishId: 'dish404' },
@@ -278,7 +516,7 @@ export const dishes = {
 	// Бутер с сельдью и свеклой +
 	dish303: {
 		id: 'dish303',
-		name: 'С сельдью и свеклой',
+		name: 'С сельдью, печёной свеклой',
 		image: sSeledkoj,
 		ingredients: [
 			{
@@ -354,7 +592,7 @@ export const dishes = {
 	// Бутер с сулугуни и докторской +
 	dish306: {
 		id: 'dish306',
-		name: 'С сулугуни и докторской',
+		name: 'Горячий с сулугуни и докторской',
 		image: null,
 		ingredients: [
 			{
@@ -395,7 +633,7 @@ export const dishes = {
 	// Бутер с Гравлаксом +
 	dish308: {
 		id: 'dish308',
-		name: 'С гравлаксом',
+		name: 'С красной рыбой',
 		image: sGravlars,
 		ingredients: [
 			{ name: 'Гравлакс пф', weight: '45г', isDish: true, dishId: 'dish414' },
@@ -540,7 +778,7 @@ export const dishes = {
 	// Мимоза
 	dish313: {
 		id: 'dish313',
-		name: 'Мимоза',
+		name: 'Салат Мимоза',
 		image: null,
 		ingredients: [
 			{
@@ -549,6 +787,57 @@ export const dishes = {
 				isDish: true,
 				dishId: 'dish461',
 			},
+		],
+		preparation: '',
+		station: 'station3',
+	},
+	// Бутерброд со взбитой сметаной и вареньем
+	dish314: {
+		id: 'dish314',
+		name: 'Со сметаной и вареньем (нет тк)',
+		image: '',
+		ingredients: [
+			{
+				name: '',
+				weight: '',
+				isDish: false,
+				dishId: '',
+			},
+			{ name: '', weight: '' },
+		],
+		preparation: '',
+		station: 'station3',
+	},
+	// Сельдь с картофелем и квашеной капустой
+	dish315: {
+		id: 'dish315',
+		name: 'Сельдь с картофелем и квашеной капустой (нет тк)',
+		image: '',
+		ingredients: [
+			{
+				name: '',
+				weight: '',
+				isDish: false,
+				dishId: '',
+			},
+			{ name: '', weight: '' },
+		],
+		preparation: '',
+		station: 'station3',
+	},
+	// Паштет из печени цыплят с пьяной вишней
+	dish316: {
+		id: 'dish316',
+		name: 'Паштет из печени цыплят (нет тк)',
+		image: '',
+		ingredients: [
+			{
+				name: '',
+				weight: '',
+				isDish: false,
+				dishId: '',
+			},
+			{ name: '', weight: '' },
 		],
 		preparation: '',
 		station: 'station3',
